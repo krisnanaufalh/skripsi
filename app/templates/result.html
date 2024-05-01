@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK SKRIPSI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='/css/bootstrap.min.css') }} rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/templatemo-snapx-photography.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/owl.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <section class="pricing-plans" id="Aplikasi">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- ***** Input Area Start ***** -->
+            <div class="col-lg-8">
+              <div class="pricing-item ">
+                <h4>Hasil Prediksi</h4>
+                    <div id="hasil_prediksi" class="pricing-item ">
+                        <img src={{ predicted_image }} width="400" alt="">
+                        {% if predictions < 0.5 %}
+                          <h3>Ikan Asin teridentifikasi berformalin</h3> 
+                        {% else %}                                                 
+                          <h3>Ikan Asin teridentifikasi non-formalin</h3>
+                        {% endif %}
+                    </div>
+                    <div class="buttons">
+                      <div class="big-border-button">
+                        <a href={{ url_for('aplikasi') }}>Prediksi Lagi</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <!-- ***** Input Area End ***** -->
+          </div>
+        </div>
+      </section>
+
+    <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src={{ url_for('static', filename='/js/jquery.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/bootstrap.min.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/isotope.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/owl-carousel.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/tabs.js') }}></script>
+  <script src={{ url_for('static', filename='/js/popup.js') }}></script>
+  <script src={{ url_for('static', filename='/js/custom.js') }}></script>
+
+</body>
+</html>

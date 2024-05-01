@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>APK SKRIPSI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='/css/bootstrap.min.css') }} rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/templatemo-snapx-photography.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/owl.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 576 SnapX Photography
+
+https://templatemo.com/tm-576-snapx-photography
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <nav class="main-nav justify-content-center">
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href={{ url_for('homepage') }}>Home</a></li>                  
+                        <li><a href={{ url_for('panduan') }}>How to Use</a></li>
+                        <li><a href={{ url_for('aplikasi') }}>Testing</a></li>
+                    </ul>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Panduan Area Start ***** -->
+  <section class="pricing-plans" id="Panduan">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="main-content">
+            <h4>Panduan Aplikasi</h4>
+            <br>
+            <p>1. Aplikasi ini adalah aplikasi yang dapat mengidentifikasi formalin pada ikan asin jenis peda</p>
+            <p>2. Cara menggunakan aplikasi adalah user masuk ke fitur aplikasi</p>
+            <p>3. Didalam fitur aplikasi user diharuskan memasukkan input berupa gambar ikan asin peda (harap sesuaikan dengan contoh)</p>
+            <p>4. Setelah user input gambar yang ingin diidentifikasi klik tombol prediksi, maka aplikasi akan mengidentifikasi ikan secara otomatis</p>
+            <p>5. Aplikasi akan menampilkan hasil prediksi berdasarkan input yang user masukkan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Panduan Area End ***** -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2048 <a href="">SnapX</a> Photo Contest Co., Ltd. All rights reserved. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src={{ url_for('static', filename='/js/jquery.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/bootstrap.min.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/isotope.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/owl-carousel.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/tabs.js') }}></script>
+  <script src={{ url_for('static', filename='/js/popup.js') }}></script>
+  <script src={{ url_for('static', filename='/js/custom.js') }}></script>
+
+  </body>
+</html>

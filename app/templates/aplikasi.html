@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>APK SKRIPSI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='/css/bootstrap.min.css') }} rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/templatemo-snapx-photography.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/owl.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/fontawesome.css') }}>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 576 SnapX Photography
+
+https://templatemo.com/tm-576-snapx-photography
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <nav class="main-nav justify-content-center">
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href={{ url_for('homepage') }}>Home</a></li>                  
+                        <li><a href={{ url_for('panduan') }}>How to Use</a></li>
+                        <li><a href={{ url_for('aplikasi') }}>Testing</a></li>
+                    </ul>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Aplikasi Area Start ***** -->
+  <section class="pricing-plans" id="Aplikasi">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- ***** Input Area Start ***** -->
+        <div class="col-lg-6">
+          <div class="pricing-item ">
+            <form action="/classify" method="POST" enctype="multipart/form-data">
+              <img src={{ url_for('static', filename='/images/formalin-test(1)-.jpg') }} width="300" alt="">
+              <h4>Silahkan Upload Gambar</h4>
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="input_gambar" name="file">
+              </div>
+              <ul class="first-plan">
+                <li>Harap sesuaikan dengan contoh di atas</li>
+              </ul>
+              <div>
+                <button class="btn btn-primary" type="submit" value="Classify">Prediksi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ***** Input Area End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Aplikasi Area End ***** -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2048 <a href="">SnapX</a> Photo Contest Co., Ltd. All rights reserved. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src={{ url_for('static', filename='/js/jquery.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/bootstrap.min.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/isotope.min.js') }}></script>
+  <script src={{ url_for('static', filename='/js/owl-carousel.js') }}></script>
+
+  <script src={{ url_for('static', filename='/js/tabs.js') }}></script>
+  <script src={{ url_for('static', filename='/js/popup.js') }}></script>
+  <script src={{ url_for('static', filename='/js/custom.js') }}></script>
+
+  </body>
+</html>
